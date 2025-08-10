@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Property | White Hawks Properties</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation (reuse main nav style) -->
+    <nav
+      class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-3">
+          <div
+            class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center"
+          >
+            <span class="font-bold text-xl">WH</span>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold gradient-text">
+              White Hawks Properties
+            </h1>
+            <p class="text-sm text-gray-600">Premium Real Estate</p>
+          </div>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="index.html#home"
+            class="text-gray-700 hover:text-primary font-medium"
+            >Home</a
+          >
+          <a
+            href="index.html#properties"
+            class="text-gray-700 hover:text-primary font-medium"
+            >Properties</a
+          >
+          <a
+            href="index.html#services"
+            class="text-gray-700 hover:text-primary font-medium"
+            >Services</a
+          >
+          <a
+            href="index.html#about"
+            class="text-gray-700 hover:text-primary font-medium"
+            >About</a
+          >
+          <a
+            href="index.html#contact"
+            class="text-gray-700 hover:text-primary font-medium"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 bg-gradient-to-br from-primary to-secondary">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10"
+      >
+        <img
+          src="https://placehold.co/600x400?text=Property+Main+Image"
+          alt="Property"
+          class="rounded-3xl shadow-xl w-full md:w-1/2 object-cover"
+        />
+        <div class="md:w-1/2">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Modern Family Villa
+          </h1>
+          <p class="text-xl mb-4">Area 3, Lilongwe</p>
+          <div class="flex items-center gap-6 mb-6">
+            <span
+              class="bg-white/90 text-gray-800 px-4 py-2 rounded-full font-semibold text-lg shadow"
+              >MWK 85M</span
+            >
+            <span
+              class="bg-secondary text-gray-600 px-4 py-2 rounded-full font-semibold text-lg shadow"
+              >For Sale</span
+            >
+          </div>
+          <div class="flex gap-8 text-lg mb-6">
+            <span>4 Bedrooms</span>
+            <span>3 Bathrooms</span>
+            <span>250 sqm</span>
+          </div>
+          <a
+            href="#contact"
+            class="inline-block bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 pulse-glow"
+            >Contact Agent</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery & Details -->
+    <section class="py-16 bg-white">
+      <div
+        class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-3 gap-12"
+      >
+        <!-- Gallery -->
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl font-bold text-gray-800 mb-6">Gallery</h2>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+            <img
+              src="https://placehold.co/400x300?text=Image+1"
+              class="rounded-xl object-cover w-full h-48"
+              alt="Gallery 1"
+            />
+            <img
+              src="https://placehold.co/400x300?text=Image+2"
+              class="rounded-xl object-cover w-full h-48"
+              alt="Gallery 2"
+            />
+            <img
+              src="https://placehold.co/400x300?text=Image+3"
+              class="rounded-xl object-cover w-full h-48"
+              alt="Gallery 3"
+            />
+            <img
+              src="https://placehold.co/400x300?text=Image+4"
+              class="rounded-xl object-cover w-full h-48"
+              alt="Gallery 4"
+            />
+            <img
+              src="https://placehold.co/400x300?text=Image+5"
+              class="rounded-xl object-cover w-full h-48"
+              alt="Gallery 5"
+            />
+            <img
+              src="https://placehold.co/400x300?text=Image+6"
+              class="rounded-xl object-cover w-full h-48"
+              alt="Gallery 6"
+            />
+          </div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            Property Description
+          </h2>
+          <p class="text-gray-600 mb-6">
+            This modern family villa offers spacious living in the heart of
+            Lilongwe. Featuring 4 bedrooms, 3 bathrooms, a large kitchen, and a
+            beautiful garden. Perfect for families seeking comfort and style.
+            (Replace this text with your dynamic property description.)
+          </p>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Spacious living and dining area</li>
+            <li>Modern kitchen with appliances</li>
+            <li>Private garden & parking</li>
+            <li>Secure neighborhood</li>
+            <li>Close to schools and amenities</li>
+          </ul>
+        </div>
+        <!-- Sidebar -->
+        <aside
+          class="bg-gray-100 rounded-2xl p-8 shadow-xl flex flex-col gap-6"
+        >
+          <div class="flex items-center gap-4 mb-4">
+            <img
+              src="https://placehold.co/80x80?text=Agent"
+              class="rounded-full w-16 h-16 object-cover"
+              alt="Agent"
+            />
+            <div>
+              <h3 class="font-bold text-lg text-gray-800">Jane Banda</h3>
+              <p class="text-gray-600 text-sm">Property Agent</p>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <p class="text-gray-700">
+              <strong>Phone:</strong> +265 991 234 567
+            </p>
+            <p class="text-gray-700">
+              <strong>Email:</strong> jane@whitehawksproperties.com
+            </p>
+          </div>
+          <a
+            href="#contact"
+            class="block bg-primary hover:bg-blue-400 py-3 rounded-lg font-semibold text-center transition-all duration-300"
+            >Request Viewing</a
+          >
+        </aside>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-br from-primary to-secondary">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Interested in this property?
+        </h2>
+        <p class="text-lg text-gray-500 mb-8">
+          Contact us today to schedule a viewing or get more information.
+        </p>
+        <a
+          href="#contact"
+          class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 pulse-glow"
+          >Get in Touch</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer (reuse main footer style) -->
+    <footer class="bg-gray-900 text-white py-16 mt-12">
+      <div class="container mx-auto px-6 text-center">
+        <h3 class="text-xl font-bold mb-2">White Hawks Properties</h3>
+        <p class="text-gray-400 mb-4">
+          Premium Real Estate in Lilongwe, Malawi
+        </p>
+        <p class="text-gray-400">
+          &copy; 2025 White Hawks Properties. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
